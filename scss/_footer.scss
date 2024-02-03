@@ -1,0 +1,40 @@
+footer {
+    background-color: $footer-bg;
+    padding: 20px 0;
+    text-align: center;
+    height: 260px;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .footer-info, .footer-social {
+            flex: 1;
+
+            h3 {
+                color: #333;
+            }
+
+            p {
+                margin: 5px 0;
+                color: #666;
+            }
+        }
+
+        .footer-social {
+            a {
+                display: block;
+                margin: 5px 0;
+                color: #333;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #ff6600;
+                }
+            }
+        }
+    }
+}
